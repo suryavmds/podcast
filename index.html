@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <!-- <title>Sider Menu Bar CSS</title> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+
+<body class="main-bg">
+    <input type="checkbox" id="check">
+    <label id="menu-label" for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+        <header>Podcast</header>
+        <ul>
+            <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="#"><i class="fas fa-stream"></i>Playlists</a></li>
+            <li><a href="#"><i class="fas fa-heart"></i>Saved Podcasts</a></li>
+            <li><a href="#"><i class="fas fa-cog"></i>Settings</a></li>
+            <li><a href="#"><i class="fas fa-user-alt"></i>Profile</a></li>
+        </ul>
+    </div>
+    <section class="main-content">
+
+        <div class="music-selected">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 music-thumb text-center container-img">
+                    <img class="img-fluid" src="https://c.saavncdn.com/899/Teddy-Tamil-2020-20200424105210-500x500.jpg" alt="Song Name">
+                    <div class="img-shadow"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 p-3">
+                    <div class="music-details">
+                        <h4 class="m-title">En Iniya Thanimaye</h4>
+                        <h5 class="m-author">D. Imman, Sid Sriram</h5>
+                        <p class="text-muted">From “Teddy”</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="music-player">
+                        <form>
+                            <div class="form-group mb-0">
+                                <div class="music-duration">
+                                    <div class="current-dur">
+                                        01:25
+                                    </div>
+                                    <div class="max-dur">
+                                        03:15
+                                    </div>
+                                </div>
+                                <input type="range" class="form-control-range" id="formControlRange">
+                                <div class="music-buttons d-flex justify-content-around align-items-center">
+                                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Add to playlist"><i class="fas fa-heart"></i></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Previous Song"><i class="fas fa-backward"></i></a>
+                                    <a href="#" class="grad1 btn-round"><i class="fas fa-play"></i></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Next Song"><i class="fas fa-forward"></i></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Shuffle titles"><i class="fas fa-random"></i></a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="music-lists">
+            <section class="music-row">
+                <h4 class="ml-title">Recommended Songs</h4>
+                <p class="ml-subtitle">based on your searches</p>
+                <hr class="w-color">
+                <div class="card-container d-flex flex-row recommended">
+                    <div class="music-card">
+                        <img class="img-fluid" src="https://c.saavncdn.com/899/Teddy-Tamil-2020-20200424105210-500x500.jpg" alt="">
+                        <h5 class="s-name text-center">Song Name
+                            <div class="btn-group dropup">
+                                <button type="button" class="dropdown-toggle1 btn-tr p-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <!-- Dropdown menu links -->
+                                    <a class="dropdown-item" href="#">Add to playlist</a>
+                                    <a class="dropdown-item" href="#">Report</a>
+                                    <a class="dropdown-item" href="#">Share</a>
+                                </div>
+                            </div>
+                        </h5>
+                        <p class="s-artist text-muted text-center">Artist Name</p>
+                    </div>
+
+                    <div class="music-card">
+                        <img class="img-fluid" src="https://c.saavncdn.com/899/Teddy-Tamil-2020-20200424105210-500x500.jpg" alt="">
+                        <h5 class="s-name text-center">Song Name
+                            <div class="btn-group dropup">
+                                <button type="button" class="dropdown-toggle1 btn-tr p-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <!-- Dropdown menu links -->
+                                    <a class="dropdown-item" href="#">Add to playlist</a>
+                                    <a class="dropdown-item" href="#">Report</a>
+                                    <a class="dropdown-item" href="#">Share</a>
+                                </div>
+                            </div>
+                        </h5>
+                        <p class="s-artist text-muted text-center">Artist Name</p>
+                    </div>
+
+                    <div class="music-card">
+                        <img class="img-fluid" src="https://c.saavncdn.com/899/Teddy-Tamil-2020-20200424105210-500x500.jpg" alt="">
+                        <h5 class="s-name text-center">Song Name
+                            <div class="btn-group dropup">
+                                <button type="button" class="dropdown-toggle1 btn-tr p-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <!-- Dropdown menu links -->
+                                    <a class="dropdown-item" href="#">Add to playlist</a>
+                                    <a class="dropdown-item" href="#">Report</a>
+                                    <a class="dropdown-item" href="#">Share</a>
+                                </div>
+                            </div>
+                        </h5>
+                        <p class="s-artist text-muted text-center">Artist Name</p>
+                    </div>
+
+                    <div class="music-card">
+                        <img class="img-fluid" src="https://c.saavncdn.com/899/Teddy-Tamil-2020-20200424105210-500x500.jpg" alt="">
+                        <h5 class="s-name text-center">Song Name
+                            <div class="btn-group dropup">
+                                <button type="button" class="dropdown-toggle1 btn-tr p-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <!-- Dropdown menu links -->
+                                    <a class="dropdown-item" href="#">Add to playlist</a>
+                                    <a class="dropdown-item" href="#">Report</a>
+                                    <a class="dropdown-item" href="#">Share</a>
+                                </div>
+                            </div>
+                        </h5>
+                        <p class="s-artist text-muted text-center">Artist Name</p>
+                    </div>
+
+                    <div class="music-card">
+                        <img class="img-fluid" src="https://c.saavncdn.com/899/Teddy-Tamil-2020-20200424105210-500x500.jpg" alt="">
+                        <h5 class="s-name text-center">Song Name
+                            <div class="btn-group dropup">
+                                <button type="button" class="dropdown-toggle1 btn-tr p-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <!-- Dropdown menu links -->
+                                    <a class="dropdown-item" href="#">Add to playlist</a>
+                                    <a class="dropdown-item" href="#">Report</a>
+                                    <a class="dropdown-item" href="#">Share</a>
+                                </div>
+                            </div>
+                        </h5>
+                        <p class="s-artist text-muted text-center">Artist Name</p>
+                    </div>
+
+                    <div class="music-card">
+                        <img class="img-fluid" src="https://c.saavncdn.com/899/Teddy-Tamil-2020-20200424105210-500x500.jpg" alt="">
+                        <h5 class="s-name text-center">Song Name
+                            <div class="btn-group dropup">
+                                <button type="button" class="dropdown-toggle1 btn-tr p-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <!-- Dropdown menu links -->
+                                    <a class="dropdown-item" href="#">Add to playlist</a>
+                                    <a class="dropdown-item" href="#">Report</a>
+                                    <a class="dropdown-item" href="#">Share</a>
+                                </div>
+                            </div>
+                        </h5>
+                        <p class="s-artist text-muted text-center">Artist Name</p>
+                    </div>
+
+                    <div class="music-card">
+                        <img class="img-fluid" src="https://c.saavncdn.com/899/Teddy-Tamil-2020-20200424105210-500x500.jpg" alt="">
+                        <h5 class="s-name text-center">Song Name
+                            <div class="btn-group dropup">
+                                <button type="button" class="dropdown-toggle1 btn-tr p-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <!-- Dropdown menu links -->
+                                    <a class="dropdown-item" href="#">Add to playlist</a>
+                                    <a class="dropdown-item" href="#">Report</a>
+                                    <a class="dropdown-item" href="#">Share</a>
+                                </div>
+                            </div>
+                        </h5>
+                        <p class="s-artist text-muted text-center">Artist Name</p>
+                    </div>
+
+                    <div class="music-card">
+                        <img class="img-fluid" src="https://c.saavncdn.com/899/Teddy-Tamil-2020-20200424105210-500x500.jpg" alt="">
+                        <h5 class="s-name text-center">Song Name
+                            <div class="btn-group dropup">
+                                <button type="button" class="dropdown-toggle1 btn-tr p-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <!-- Dropdown menu links -->
+                                    <a class="dropdown-item" href="#">Add to playlist</a>
+                                    <a class="dropdown-item" href="#">Report</a>
+                                    <a class="dropdown-item" href="#">Share</a>
+                                </div>
+                            </div>
+                        </h5>
+                        <p class="s-artist text-muted text-center">Artist Name</p>
+                    </div>
+
+                    <div class="music-card">
+                        <img class="img-fluid" src="https://c.saavncdn.com/899/Teddy-Tamil-2020-20200424105210-500x500.jpg" alt="">
+                        <h5 class="s-name text-center">Song Name
+                            <div class="btn-group dropup">
+                                <button type="button" class="dropdown-toggle1 btn-tr p-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <!-- Dropdown menu links -->
+                                    <a class="dropdown-item" href="#">Add to playlist</a>
+                                    <a class="dropdown-item" href="#">Report</a>
+                                    <a class="dropdown-item" href="#">Share</a>
+                                </div>
+                            </div>
+                        </h5>
+                        <p class="s-artist text-muted text-center">Artist Name</p>
+                    </div>
+
+                    <div class="music-card">
+                        <img class="img-fluid" src="https://c.saavncdn.com/899/Teddy-Tamil-2020-20200424105210-500x500.jpg" alt="">
+                        <h5 class="s-name text-center">Song Name
+                            <div class="btn-group dropup">
+                                <button type="button" class="dropdown-toggle1 btn-tr p-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <!-- Dropdown menu links -->
+                                    <a class="dropdown-item" href="#">Add to playlist</a>
+                                    <a class="dropdown-item" href="#">Report</a>
+                                    <a class="dropdown-item" href="#">Share</a>
+                                </div>
+                            </div>
+                        </h5>
+                        <p class="s-artist text-muted text-center">Artist Name</p>
+                    </div>
+
+                </div>
+            </section>
+            <section class="music-row">
+                <h4 class="ml-title">Popular today!</h4>
+                <hr class="w-color">
+                <div class="card-container d-flex flex-row popular">
+                    <div class="music-card">
+                        <img class="img-fluid" src="https://c.saavncdn.com/899/Teddy-Tamil-2020-20200424105210-500x500.jpg" alt="">
+                        <h5 class="s-name text-center">Song Name <div class="btn-group dropup">
+                                <button type="button" class="dropdown-toggle1 btn-tr pl-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <!-- Dropdown menu links -->
+                                    <a class="dropdown-item" href="#">Add to playlist</a>
+                                    <a class="dropdown-item" href="#">Report</a>
+                                    <a class="dropdown-item" href="#">Share</a>
+                                </div>
+                            </div>
+                        </h5>
+                        <p class="s-artist text-muted text-center">Artist Name</p>
+                    </div>
+
+                    <div class="music-card">
+                        <img class="img-fluid" src="https://c.saavncdn.com/899/Teddy-Tamil-2020-20200424105210-500x500.jpg" alt="">
+                        <h5 class="s-name text-center">Song Name <div class="btn-group dropup">
+                                <button type="button" class="dropdown-toggle1 btn-tr pl-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <!-- Dropdown menu links -->
+                                    <a class="dropdown-item" href="#">Add to playlist</a>
+                                    <a class="dropdown-item" href="#">Report</a>
+                                    <a class="dropdown-item" href="#">Share</a>
+                                </div>
+                            </div>
+                        </h5>
+                        <p class="s-artist text-muted text-center">Artist Name</p>
+                    </div>
+
+                    <div class="music-card">
+                        <img class="img-fluid" src="https://c.saavncdn.com/899/Teddy-Tamil-2020-20200424105210-500x500.jpg" alt="">
+                        <h5 class="s-name text-center">Song Name <div class="btn-group dropup">
+                                <button type="button" class="dropdown-toggle1 btn-tr pl-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <!-- Dropdown menu links -->
+                                    <a class="dropdown-item" href="#">Add to playlist</a>
+                                    <a class="dropdown-item" href="#">Report</a>
+                                    <a class="dropdown-item" href="#">Share</a>
+                                </div>
+                            </div>
+                        </h5>
+                        <p class="s-artist text-muted text-center">Artist Name</p>
+                    </div>
+
+                    <div class="music-card">
+                        <img class="img-fluid" src="https://c.saavncdn.com/899/Teddy-Tamil-2020-20200424105210-500x500.jpg" alt="">
+                        <h5 class="s-name text-center">Song Name <div class="btn-group dropup">
+                                <button type="button" class="dropdown-toggle1 btn-tr pl-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <!-- Dropdown menu links -->
+                                    <a class="dropdown-item" href="#">Add to playlist</a>
+                                    <a class="dropdown-item" href="#">Report</a>
+                                    <a class="dropdown-item" href="#">Share</a>
+                                </div>
+                            </div>
+                        </h5>
+                        <p class="s-artist text-muted text-center">Artist Name</p>
+                    </div>
+
+                    <div class="music-card">
+                        <img class="img-fluid" src="https://c.saavncdn.com/899/Teddy-Tamil-2020-20200424105210-500x500.jpg" alt="">
+                        <h5 class="s-name text-center">Song Name <div class="btn-group dropup">
+                                <button type="button" class="dropdown-toggle1 btn-tr pl-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <!-- Dropdown menu links -->
+                                    <a class="dropdown-item" href="#">Add to playlist</a>
+                                    <a class="dropdown-item" href="#">Report</a>
+                                    <a class="dropdown-item" href="#">Share</a>
+                                </div>
+                            </div>
+                        </h5>
+                        <p class="s-artist text-muted text-center">Artist Name</p>
+                    </div>
+
+                    <div class="music-card">
+                        <img class="img-fluid" src="https://c.saavncdn.com/899/Teddy-Tamil-2020-20200424105210-500x500.jpg" alt="">
+                        <h5 class="s-name text-center">Song Name <div class="btn-group dropup">
+                                <button type="button" class="dropdown-toggle1 btn-tr pl-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <!-- Dropdown menu links -->
+                                    <a class="dropdown-item" href="#">Add to playlist</a>
+                                    <a class="dropdown-item" href="#">Report</a>
+                                    <a class="dropdown-item" href="#">Share</a>
+                                </div>
+                            </div>
+                        </h5>
+                        <p class="s-artist text-muted text-center">Artist Name</p>
+                    </div>
+
+                    <div class="music-card">
+                        <img class="img-fluid" src="https://c.saavncdn.com/899/Teddy-Tamil-2020-20200424105210-500x500.jpg" alt="">
+                        <h5 class="s-name text-center">Song Name <div class="btn-group dropup">
+                                <button type="button" class="dropdown-toggle1 btn-tr pl-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <!-- Dropdown menu links -->
+                                    <a class="dropdown-item" href="#">Add to playlist</a>
+                                    <a class="dropdown-item" href="#">Report</a>
+                                    <a class="dropdown-item" href="#">Share</a>
+                                </div>
+                            </div>
+                        </h5>
+                        <p class="s-artist text-muted text-center">Artist Name</p>
+                    </div>
+
+                    <div class="music-card">
+                        <img class="img-fluid" src="https://c.saavncdn.com/899/Teddy-Tamil-2020-20200424105210-500x500.jpg" alt="">
+                        <h5 class="s-name text-center">Song Name <div class="btn-group dropup">
+                                <button type="button" class="dropdown-toggle1 btn-tr pl-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <!-- Dropdown menu links -->
+                                    <a class="dropdown-item" href="#">Add to playlist</a>
+                                    <a class="dropdown-item" href="#">Report</a>
+                                    <a class="dropdown-item" href="#">Share</a>
+                                </div>
+                            </div>
+                        </h5>
+                        <p class="s-artist text-muted text-center">Artist Name</p>
+                    </div>
+
+                    <div class="music-card">
+                        <img class="img-fluid" src="https://c.saavncdn.com/899/Teddy-Tamil-2020-20200424105210-500x500.jpg" alt="">
+                        <h5 class="s-name text-center">Song Name <div class="btn-group dropup">
+                                <button type="button" class="dropdown-toggle1 btn-tr pl-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <!-- Dropdown menu links -->
+                                    <a class="dropdown-item" href="#">Add to playlist</a>
+                                    <a class="dropdown-item" href="#">Report</a>
+                                    <a class="dropdown-item" href="#">Share</a>
+                                </div>
+                            </div>
+                        </h5>
+                        <p class="s-artist text-muted text-center">Artist Name</p>
+                    </div>
+
+                    <div class="music-card">
+                        <img class="img-fluid" src="https://c.saavncdn.com/899/Teddy-Tamil-2020-20200424105210-500x500.jpg" alt="">
+                        <h5 class="s-name text-center">Song Name <div class="btn-group dropup">
+                                <button type="button" class="dropdown-toggle1 btn-tr pl-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <!-- Dropdown menu links -->
+                                    <a class="dropdown-item" href="#">Add to playlist</a>
+                                    <a class="dropdown-item" href="#">Report</a>
+                                    <a class="dropdown-item" href="#">Share</a>
+                                </div>
+                            </div>
+                        </h5>
+                        <p class="s-artist text-muted text-center">Artist Name</p>
+                    </div>
+
+                    <div class="music-card">
+                        <img class="img-fluid" src="https://c.saavncdn.com/899/Teddy-Tamil-2020-20200424105210-500x500.jpg" alt="">
+                        <h5 class="s-name text-center">Song Name <div class="btn-group dropup">
+                                <button type="button" class="dropdown-toggle1 btn-tr pl-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <!-- Dropdown menu links -->
+                                    <a class="dropdown-item" href="#">Add to playlist</a>
+                                    <a class="dropdown-item" href="#">Report</a>
+                                    <a class="dropdown-item" href="#">Share</a>
+                                </div>
+                            </div>
+                        </h5>
+                        <p class="s-artist text-muted text-center">Artist Name</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="music-row">
+                <h4 class="ml-title">Top Artists</h4>
+                <hr class="w-color">
+                <div class="d-flex flex-wrap justify-content-around">
+                    <div class="music-card">
+                        <img class="img-fluid rounded-circle" src="https://m.media-amazon.com/images/I/41hSo+BdxKL.jpg" alt="">
+                        <h5 class="s-name text-center">Artist Name <div class="btn-group dropup">
+                                <button type="button" class="dropdown-toggle1 btn-tr pl-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <!-- Dropdown menu links -->
+                                    <a class="dropdown-item" href="#">Subscribe</a>
+                                    <a class="dropdown-item" href="#">Report artist</a>
+                                    <a class="dropdown-item" href="#">Share</a>
+                                </div>
+                            </div>
+                        </h5>
+                    </div>
+
+                    <div class="music-card">
+                        <img class="img-fluid rounded-circle" src="https://m.media-amazon.com/images/I/41hSo+BdxKL.jpg" alt="">
+                        <h5 class="s-name text-center">Artist Name <div class="btn-group dropup">
+                                <button type="button" class="dropdown-toggle1 btn-tr pl-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <!-- Dropdown menu links -->
+                                    <a class="dropdown-item" href="#">Subscribe</a>
+                                    <a class="dropdown-item" href="#">Report artist</a>
+                                    <a class="dropdown-item" href="#">Share</a>
+                                </div>
+                            </div>
+                        </h5>
+                    </div>
+                    <div class="music-card">
+                        <img class="img-fluid rounded-circle" src="https://m.media-amazon.com/images/I/41hSo+BdxKL.jpg" alt="">
+                        <h5 class="s-name text-center">Artist Name <div class="btn-group dropup">
+                                <button type="button" class="dropdown-toggle1 btn-tr pl-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <!-- Dropdown menu links -->
+                                    <a class="dropdown-item" href="#">Subscribe</a>
+                                    <a class="dropdown-item" href="#">Report artist</a>
+                                    <a class="dropdown-item" href="#">Share</a>
+                                </div>
+                            </div>
+                        </h5>
+                    </div>
+                    <div class="music-card">
+                        <img class="img-fluid rounded-circle" src="https://m.media-amazon.com/images/I/41hSo+BdxKL.jpg" alt="">
+                        <h5 class="s-name text-center">Artist Name <div class="btn-group dropup">
+                                <button type="button" class="dropdown-toggle1 btn-tr pl-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <!-- Dropdown menu links -->
+                                    <a class="dropdown-item" href="#">Subscribe</a>
+                                    <a class="dropdown-item" href="#">Report artist</a>
+                                    <a class="dropdown-item" href="#">Share</a>
+                                </div>
+                            </div>
+                        </h5>
+                    </div>
+                    <div class="music-card">
+                        <img class="img-fluid rounded-circle" src="https://m.media-amazon.com/images/I/41hSo+BdxKL.jpg" alt="">
+                        <h5 class="s-name text-center">Artist Name <div class="btn-group dropup">
+                                <button type="button" class="dropdown-toggle1 btn-tr pl-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <!-- Dropdown menu links -->
+                                    <a class="dropdown-item" href="#">Subscribe</a>
+                                    <a class="dropdown-item" href="#">Report artist</a>
+                                    <a class="dropdown-item" href="#">Share</a>
+                                </div>
+                            </div>
+                        </h5>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+<script src="assets/js/main.js"></script>
+<script>
+    const slider2 = document.querySelector('.recommended');
+let isDown2 = false;
+let startX2;
+let scrollLeft2;
+    
+    slider2.addEventListener('mousedown', (e) => {
+  isDown2 = true;
+  slider2.classList.add('active');
+  startX2 = e.pageX - slider2.offsetLeft;
+  scrollLeft2 = slider2.scrollLeft2;
+});
+slider2.addEventListener('mouseleave', () => {
+  isDown2 = false;
+  slider2.classList.remove('active');
+});
+slider2.addEventListener('mouseup', () => {
+  isDown2 = false;
+  slider2.classList.remove('active');
+});
+slider2.addEventListener('mousemove', (e) => {
+  if(!isDown2) return;
+  e.preventDefault();
+  const x2 = e.pageX - slider2.offsetLeft;
+  const walk2= (x2 - startX2) * 2;
+  slider2.scrollLeft2 = scrollLeft2 - walk2;
+});
+    </script>
+</html>
