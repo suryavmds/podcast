@@ -30,7 +30,7 @@ a {
 /* width */
 ::-webkit-scrollbar {
     width: 3px;
-    height: 3px;
+    height: 5px;
 }
 
 /* Track */
@@ -40,13 +40,13 @@ a {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #2F69F8;
+    background: #222D46;
     border-radius: 15px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #173A93;
+    background: #1E273E;
 }
 
 /*-------------------------NAVBAR------------------------------------*/
@@ -268,7 +268,13 @@ label #cancel {
     #check:checked ~ section {
         margin-left: 0px;
     }
-
+    .music-buttons {
+        padding: 10px;
+    }
+    
+    .music-buttons i {
+        font-size: 16px;
+    }
 }
 
 @media(max-width:1200px) {
@@ -432,6 +438,9 @@ hr.w-color {
 .a-stats {
     text-align: right;
 }
+table{
+    width:100% !important;
+}
 
 .ml-table td {
     color: #FFFFFF;
@@ -493,6 +502,9 @@ hr.w-color {
     .ml-table td {
         font-size: 18px;
     }
+    .artist-selected{
+        padding: 100px 10px 10px 60px;
+    }
 }
 
 
@@ -523,4 +535,21 @@ hr.w-color {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     text-align: center;
+}
+
+
+
+/* -----------------------------FLOATING PLAYER----------------------- */
+.floating-player{
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    background-color: #2A2D41;
+    padding: 20px 60px;
+}
+@media(max-width:768px) {
+    .floating-player{
+        padding: 20px 20px;
+    }
 }
