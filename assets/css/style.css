@@ -49,112 +49,7 @@ a {
     background: #1E273E;
 }
 
-/*-------------------------NAVBAR------------------------------------*/
 
-.sidebar {
-    position: fixed;
-    left: -250px;
-    width: 250px;
-    height: 100%;
-    background: #121421;
-    transition: all .5s ease;
-    z-index: 999;
-}
-
-.sidebar header {
-    font-size: 22px;
-    color: white;
-    line-height: 70px;
-    text-align: center;
-    background: #2F69F8;
-    user-select: none;
-}
-
-.sidebar ul a {
-    display: block;
-    height: 100%;
-    width: 100%;
-    line-height: 65px;
-    font-size: 20px;
-    color: white;
-    padding-left: 40px;
-    box-sizing: border-box;
-    /*  border-bottom: 1px solid black;*/
-    /*  border-top: 1px solid rgba(255,255,255,.1);*/
-    transition: .4s;
-}
-
-ul li:hover a {
-    padding-left: 50px;
-}
-
-.sidebar ul a i {
-    margin-right: 16px;
-}
-
-#check {
-    display: none;
-}
-
-#menu-label {
-    display: inline;
-}
-
-label #btn,
-label #cancel {
-    position: absolute;
-    background: #042331;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-label #btn {
-    left: 40px;
-    top: 25px;
-    font-size: 35px;
-    color: white;
-    padding: 6paZZZZZx 12px;
-    transition: all .5s;
-}
-
-label #cancel {
-    z-index: 1111;
-    left: -195px;
-    top: 17px;
-    font-size: 30px;
-    color: #FFFFFF;
-    padding: 4px 9px;
-    transition: all .5s ease;
-}
-
-#check:checked ~ .sidebar {
-    left: 0;
-}
-
-#check:checked ~ label #btn {
-    left: 250px;
-    opacity: 0;
-    pointer-events: none;
-}
-
-#check:checked ~ label #cancel {
-    left: 195px;
-}
-
-#check:checked ~ section {
-    margin-left: 250px;
-}
-
-.main-content {
-    /*
-  background: url(https://assets.materialup.com/uploads/2e9e0bed-e7c4-48cf-b19e-26950f20cd26/attachment.jpg) no-repeat;
-  background-position: center;
-  background-size: cover;
-*/
-    background-color: #1B1E31;
-    /*  height: 100%;*/
-    transition: all .5s;
-}
 
 .main-content .music-selected {
     /*    height: 500px;*/
@@ -552,4 +447,134 @@ table{
     .floating-player{
         padding: 20px 20px;
     }
+}
+
+
+
+/*-------------------------NAVBAR------------------------------------*/
+
+.sidebar {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #121421;
+    transition: all .5s ease;
+    z-index: 999;
+}
+
+.sidebar header {
+    font-size: 22px;
+    color: white;
+    line-height: 70px;
+    text-align: center;
+    background: #2F69F8;
+    user-select: none;
+}
+
+.sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    /*  border-bottom: 1px solid black;*/
+    /*  border-top: 1px solid rgba(255,255,255,.1);*/
+    transition: .4s;
+}
+
+ul li:hover a {
+    padding-left: 50px;
+}
+
+.sidebar ul a i {
+    margin-right: 16px;
+}
+
+#check {
+    display: none;
+}
+
+#menu-label {
+    display: inline;
+}
+
+label #btn,
+label #cancel {
+    position: absolute;
+    background: #042331;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+label #btn {
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6paZZZZZx 12px;
+    transition: all .5s;
+}
+
+label #cancel {
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: #FFFFFF;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+
+#check:checked ~ .sidebar {
+    left: 0;
+}
+
+#check:checked ~ label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel {
+    left: 195px;
+}
+
+#check:checked ~ section {
+    margin-left: 250px;
+}
+
+.main-content {
+    /*
+  background: url(https://assets.materialup.com/uploads/2e9e0bed-e7c4-48cf-b19e-26950f20cd26/attachment.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+*/
+    background-color: #1B1E31;
+    /*  height: 100%;*/
+    transition: all .5s;
+}
+
+
+
+.searchbar{
+    background-color: #1B1E31 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.28) !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    color: rgba(255, 255, 255, 0.45) !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 300 !important;
+    max-width: 500px;
+}
+.btn-search{
+    background-color: transparent;
+    padding:5px 10px;
+    border: none;
+    color: #FFFFFF;
+    font-size: large;
 }
